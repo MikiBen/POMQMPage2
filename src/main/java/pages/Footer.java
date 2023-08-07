@@ -20,7 +20,6 @@ public class Footer {
         wait = new WebDriverWait(driver, 10);
     }
 
-
     public void navigateToMainLogo() {
         wait.until(ExpectedConditions.elementToBeClickable(footerLocators.getQualityMindsLogo()));
         footerLocators.getQualityMindsLogo().click();

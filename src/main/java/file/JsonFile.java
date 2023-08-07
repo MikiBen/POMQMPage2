@@ -22,7 +22,7 @@ public class JsonFile {
             System.out.println(i + ": ");
             System.out.println(pages.getUrlModelList().get(i).getName());
             System.out.println(pages.getUrlModelList().get(i).getUrl());
-
         }
+
     }
 }

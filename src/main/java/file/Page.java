@@ -15,7 +15,6 @@ public class Page {
     this.urlModelList = urlModelList;
     }
 
-    public Page(){
+    public Page(){}
 
-    }
 }
