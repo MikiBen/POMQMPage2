@@ -29,9 +29,9 @@ public class PagesDE {
         jsonFile.readFile();
 
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("start-maximized");
-        options.addArguments("--incognito");
-        //options.addArguments("--headless");
+        //options.addArguments("start-maximized");
+        //options.addArguments("--incognito");
+        options.addArguments("--headless");
 
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
@@ -96,13 +96,12 @@ public class PagesDE {
     }
 
     @Test
-    public void checkFooterDE() throws IOException {
+    public void checkFooterDE(){
 
         try {
             for(int i=1;i< jsonFile.getPages().getUrlModelList().size(); i++ )
             {
                 driver.navigate().to(Base.adressPage + jsonFile.getPages().getUrlModelList().get(i).getUrl());
-                System.out.println(driver.getCurrentUrl());
                 FooterDe.checkFooter(driver);
             }
         }catch(Exception e) {
@@ -113,7 +112,7 @@ public class PagesDE {
     }
 
     @Test
-    public void checkMainMenuDE() throws IOException {
+    public void checkMainMenuDE() {
 
         try {
             for(int i=1;i< jsonFile.getPages().getUrlModelList().size(); i++ )
@@ -129,7 +128,7 @@ public class PagesDE {
     }
 
     @Test
-    public void checkTabName() throws IOException {
+    public void checkTabNameDE(){
         try {
             for(int i=0;i< jsonFile.getPages().getUrlModelList().size(); i++ )
             {
@@ -146,7 +145,7 @@ public class PagesDE {
     @After
     public void closeBrowser() {
 
-        //driver.quit();
+        driver.quit();
     }
 
 }

@@ -17,7 +17,6 @@ public class Branchen {
         wait = new WebDriverWait(driver, 10);
     }
 
-
     public void openBranchenPage(){driver.navigate().to(Base.adressPage + "/de/branchen/");    }
 }
 
