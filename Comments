@@ -1,0 +1,59 @@
+
+     est dodatek STRONG do stopki dla Logo
+        {
+          "name": "Kontakt",
+          "url":  "/de/kontakt/",
+          "tabName": "QualityMinds | Kontakt"
+        }
+____________________________________________
+        Nie działa główne logo w stopce
+                        {
+                          "name": "Portfolio/QA-kernkompetenzen/spezialisierte-qa-dienstleistung-und-kompetenzen/testen-von-kunstlicher-intelligenz-ki-und-machine-learning-ml",
+                          "url":  "/de/portfolio/spezialisierte-qa-dienstleistung-und-kompetenzen/testen-von-kunstlicher-intelligenz-ki-und-machine-learning-ml/",
+                          "tabName": "QualityMinds | Testen von künstlicher Intelligenz (KI) und Machine Learning (ML)"
+                        },
+
+        Nie działa główne logo w stopce
+________________
+                {
+                  "name": "Portfolio/softwareentwicklung/software-bauhaus",
+                  "url":  "/de/portfolio/softwareentwicklung/software-bauhaus/",
+                  "tabName": "QualityMinds | Software Bauhaus"
+                },
+_________________
+  Zmienic tytuł (nie czyta $AMP
+                     {
+                          "name": "Portfolio/QA-kernkompetenzen/spezialisierte-qa-dienstleistung-und-kompetenzen/test-data-test-environment-management",
+                          "url":  "/de/portfolio/spezialisierte-qa-dienstleistung-und-kompetenzen/test-data-test-environment-management/",
+                          "tabName": "QualityMinds | Test Data &amp; Test Environment Management"
+                        },
+
+                                    {
+                                      "name": "Branchen/handelsbetrieb-einzelhandel",
+                                      "url":  "/de/branchen/handelsbetrieb-einzelhandel/",
+                                      "tabName": "QualityMinds | Handelsbetrieb &amp; Einzelhandel"
+                                    },
+
+                                                {
+                                                  "name": "UberUns/news-blog",
+                                                  "url":  "/de/uber-uns/news-blog/",
+                                                  "tabName": "QualityMinds | News &amp; Blog"
+                                                },
+
+
+                                    {
+                                      "name": "Branchen/medien-telekommunikation",
+                                      "url":  "/de/branchen/medien-telekommunikation/",
+                                      "tabName": "QualityMinds | Medien &amp; Telekommunikation"
+                                    },
+____________________
+                        Nazwa zakładki przy wydarzeniach
+                        <title>Veranstaltungen from Mai 23 – Mai 9 – QualityMinds</title>
+                        oraz adres striny nie ma uberUns
+
+
+                        DLA głównej strony nie mogę przetestować stopki - dodać wyjątek 9Ifa)
+
+______________
+xpath na stronie brak wydarzeń jest inny (Portfolio irtd)
+//*[@id="menu-main-menu-de"]/li[1]/a  a powinno być: xpath="//*[@id=\"top-menu\"]/li[1]/a")
