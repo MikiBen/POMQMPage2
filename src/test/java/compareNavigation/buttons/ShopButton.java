@@ -7,9 +7,6 @@ import org.openqa.selenium.WebDriver;
 
 public class ShopButton {
 
-
-
-
     @Test
     public static void checkShopButton(WebDriver driver) {
 
@@ -22,8 +19,6 @@ public class ShopButton {
 
             driver.close(); //This was added
             driver.switchTo().window(winHandleBefore);
-
-
 
     }
 }

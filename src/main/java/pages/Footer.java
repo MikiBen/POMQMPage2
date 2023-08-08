@@ -16,7 +16,7 @@ public class Footer {
         this.driver = driver;
         footerLocators = new FooterLocators();
         PageFactory.initElements(driver, footerLocators);
-        wait = new WebDriverWait(driver, 10);
+        wait = new WebDriverWait(driver, 5);
     }
 
     public void navigateToMainLogo() {

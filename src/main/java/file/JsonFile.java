@@ -2,13 +2,13 @@ package file;
 
 import java.io.IOException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
 public class JsonFile {
 
     private Page pages;
-
-    public Page getPages() {
-        return pages;
-    }
 
     public void readFile() throws IOException{
 

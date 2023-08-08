@@ -14,7 +14,7 @@ public class Branchen {
         this.driver = driver;
         branchenLocators = new BranchenLocators();
         PageFactory.initElements(driver, branchenLocators);
-        wait = new WebDriverWait(driver, 10);
+        wait = new WebDriverWait(driver, 5);
     }
 
     public void openBranchenPage(){driver.navigate().to(Base.adressPage + "/de/branchen/");    }

@@ -29,9 +29,9 @@ public class PagesDE {
         jsonFile.readFile();
 
         ChromeOptions options = new ChromeOptions();
-        //options.addArguments("start-maximized");
-        //options.addArguments("--incognito");
-        options.addArguments("--headless");
+        options.addArguments("start-maximized");
+        options.addArguments("--incognito");
+        //options.addArguments("--headless");
 
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
@@ -119,6 +119,7 @@ public class PagesDE {
             {
                 driver.navigate().to(Base.adressPage + jsonFile.getPages().getUrlModelList().get(i).getUrl());
                 CheckMainMenuDE.checkMainMenu(driver);
+
             }
         }catch(Exception e) {
             System.out.println("On page: " + driver.getCurrentUrl() + " I can not find proper container in mainMenu");

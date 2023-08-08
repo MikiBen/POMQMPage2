@@ -16,7 +16,7 @@ public class Portfolio {
         this.driver = driver;
         portfolioPageLocators = new PortfolioPageLocators();
         PageFactory.initElements(driver, portfolioPageLocators);
-        wait = new WebDriverWait(driver, 10);
+        wait = new WebDriverWait(driver, 5);
     }
 
     public void openPortfolioPage(){driver.navigate().to(Base.adressPage + "/de/qm-portfolio/");    }

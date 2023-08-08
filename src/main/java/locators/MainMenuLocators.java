@@ -1,8 +1,11 @@
 package locators;
 
+
+import lombok.Getter;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+@Getter
 public class MainMenuLocators {
 
     @FindBy(xpath="//*[@id=\"top-menu\"]/li[1]/a")
@@ -28,36 +31,5 @@ public class MainMenuLocators {
 
     @FindBy(xpath="//*[@id=\"store-butt\"]/a")
     private WebElement shop;
-
-    public WebElement getPortfolio() {
-        return portfolio;
-    }
-
-    public WebElement getBranchen() {
-        return branchen;
-    }
-
-    public WebElement getQualityLearning() {
-        return qualityLearning;
-    }
-
-    public WebElement getMainLogo() {
-        return mainLogo;
-    }
-
-    public WebElement getUberUns() {return uberUns;}
-
-    public WebElement getKarriere() {
-        return karriere;
-    }
-
-    public WebElement getKontakt() {
-        return kontakt;
-    }
-
-    public WebElement getShop() {
-        return shop;
-    }
-
 
 }

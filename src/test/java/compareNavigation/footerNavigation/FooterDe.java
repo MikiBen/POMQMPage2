@@ -10,7 +10,6 @@ public class FooterDe {
     @Test
     public static void checkFooter(WebDriver driver) {
 
-
         Footer footer = new Footer(driver);
 
         footer.navigateToMainLogo();
@@ -42,5 +41,6 @@ public class FooterDe {
 
         footer.navigateToFeed();
         FeedInFooter.checkFeedInFooter(driver);
+
     }
 }
